@@ -26,4 +26,7 @@
   $('#headImage,.arrowd').click(function () {
     $('#headImage').toggleClass('pause')
   })
+  $(document).ready(function () {
+    $('#loader').removeClass('loader')
+  })
 })(jQuery)
