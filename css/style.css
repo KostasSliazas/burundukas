@@ -4,9 +4,13 @@
     --secondary: #D5D2CD;
     --secondary1: #FFFBF5;
 }
-html{
+
+html {
     scroll-behavior: smooth;
+    overflow-y: auto;
+    scroll-padding-top: 12px;
 }
+
 .loader {
     position: absolute;
     top: 50%;
@@ -289,7 +293,7 @@ header {
     width: 100%;
     height: 100%;
     transform: translate3d(0, 0, 0);
-    animation: 14s steps(672) infinite headAnim alternate
+    animation: 7s steps(672) infinite headAnim alternate
 }
 
 #about {
@@ -305,16 +309,14 @@ header {
 
 @keyframes headAnim {
     0% {
-        transform: translate3d(52px, 52px, 0) scale3d(1.5, 1.5, 2);
+        transform: translate3d(52px,22px,0) scale3d(1.5,1.5,1);
     }
-
     50% {
-        transform: translate3d(-52px, 52px, 0) scale3d(2, 2, 2);
+        transform: translate3d(-52px,52px,0) scale3d(2,2,1);
     }
-
     100% {
-        transform: translate3d(0, 0, 0) scale3d(1, 1, 2);
-    }
+        transform: translate3d(0,0,0) scale3d(1,1,1);
+    }    
 }
 
 .logo,
