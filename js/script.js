@@ -10,10 +10,12 @@
       let t = $(this).attr('href')
       let i = 0
       i = (t = t.substring(1, t.length)).slice(0, -1) === 'collapse' ? 102 : 50
-
-      $('html, body').animate({
-        scrollTop: $('#' + t).offset().top - i
-      }, 'slow')
+      const id = '#' + t
+      if (id.length > 1) {
+        $('html, body').animate({
+          scrollTop: $(id).offset().top - i
+        }, 'slow')
+      }
     })
 
   $('#gotoac').on('click', function (e) {
