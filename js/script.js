@@ -7,6 +7,7 @@
     '.arrowd, #kmenu.collapse.navbar-collapse>ul.nav.navbar-nav>li.dropdown.open>ul.dropdown-menu>li>a, #kmenu.collapse.navbar-collapse>ul.nav.navbar-nav>li>a, .breadcrumb a',
     function (e) {
       e.preventDefault()
+      $('#headImage').addClass('pause')
       let t = $(this).attr('href')
       let i = 0
       i = (t = t.substring(1, t.length)).slice(0, -1) === 'collapse' ? 102 : 50
