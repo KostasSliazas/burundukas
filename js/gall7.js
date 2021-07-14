@@ -1,10 +1,14 @@
 (function (w, d) {
   'use strict'
   const IG = Object.create(null)
+
+  // imageGalleryConfig variables
   const getConfig = typeof w.imageGalleryConfig !== 'undefined' && w.imageGalleryConfig
-  // create all elements containers array
+  IG.folder = getConfig && typeof getConfig.folder === 'string' ? getConfig.folder : 'big' // default folder 'big'
   IG.imageContainer = getConfig.imageContainer || 'images-container' // default class for images
   IG.timer = getConfig && typeof getConfig.delaySeconds === 'number' && isFinite(getConfig.delaySeconds) ? getConfig.delaySeconds * 1000 : 2000 // delay for image auto showing
+
+  // create all elements containers array
   IG.IGContainersArray = []
   // create all elements array
   IG.IGArray = []
@@ -135,6 +139,7 @@
     this.isActive = false
     this.imag.className = 'hide7'
     d.body.style.overflowY = 'visible'
+    d.children[0].style.overflow = 'visible'
   }
 
   // add class for button animation (when clicked)
@@ -155,6 +160,7 @@
     if (!this.isActive) {
       this.isActive = true
       d.body.style.overflowY = 'hidden'
+      d.children[0].style.overflow = 'hidden'
       this.imag.className = ''
       this.imag.focus()
     }
@@ -164,7 +170,7 @@
     this.alts.innerText = decodeURI(image.src.slice(image.src.lastIndexOf('/') + 1))
     this.fine.innerText = Number(this.indexOfImage) + 1 + '/' + this.IGArray.length
     this.imgs.onerror = function (e) { e.target.src = image.src }
-    this.imgs.src = image.src.substr(image.src.length - 3) === 'svg' ? image.src : image.src.substring(0, image.src.lastIndexOf('/') + 1) + 'big' + image.src.slice(image.src.lastIndexOf('/'))
+    this.imgs.src = image.src.substr(image.src.length - 3) === 'svg' ? image.src : image.src.substring(0, image.src.lastIndexOf('/') + 1) + this.folder + image.src.slice(image.src.lastIndexOf('/'))
   }
   // asign container elements or BODY (default = BODY)
   IG.container = d.getElementsByClassName(IG.imageContainer).length > 0
