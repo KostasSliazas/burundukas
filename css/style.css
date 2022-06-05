@@ -131,16 +131,14 @@ sub {
 #photo,
 #video {
     padding: 24px;
-    background: var(--secondary);
 }
-
 #about,
 #accordion,
 #photo,
 #video,
 .container {
     overflow: hidden;
-    max-width: 900px
+    max-width: 780px
 }
 
 .container:after {
@@ -186,11 +184,12 @@ a:focus,
 a:visited {
     outline: 0;
     color: #313a88;
-    text-decoration: none
+    text-decoration: none;
+    color: #555;
 }
 
 a:hover {
-    color: #000;
+    color: #333;
 }
 
 header {
