@@ -6,7 +6,6 @@
 }
 
 html {
-    scroll-behavior: smooth;
     overflow-y: auto;
     scroll-padding-top: 12px;
 }
@@ -43,6 +42,7 @@ body {
     background: var(--secondary1);
     font: 16px/1.5em 'Open Sans', Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
     font-display: optional;
+    scroll-behavior: smooth;
 }
 
 h1 {
