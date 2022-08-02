@@ -131,6 +131,7 @@ sub {
 
 #photo,
 #video {
+    scroll-margin-top: 2em;
     padding: 24px;
 }
 #about,
