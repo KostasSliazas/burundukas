@@ -43,6 +43,7 @@ body {
     font: 16px/1.5em 'Open Sans', Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
     font-display: optional;
     scroll-behavior: smooth;
+    scroll-padding-top: 1em;
 }
 
 h1 {
