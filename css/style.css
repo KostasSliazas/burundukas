@@ -1,13 +1,14 @@
 :root {
-    --primary: #F1E7D9;
-    --primary1: #E1DAD0;
-    --secondary: #D5D2CD;
-    --secondary1: #FFFBF5;
+    --primary: #fffbf5;
+    --primary1: #d0d0d0;
+    --secondary: #e9e9e9;
+    --secondary1: #EEE;
 }
 
 html {
     overflow-y: auto;
     scroll-padding-top: 12px;
+    scroll-behavior: smooth;
 }
 
 .loader {
@@ -332,6 +333,8 @@ header {
 
 .thumbnail {
     background: 0 0;
+    padding: 0;
+    cursor: pointer
 }
 
 .load {
@@ -346,10 +349,6 @@ header {
 .navbar-default {
     font-family: 'Roboto', sans-serif;
     background: var(--primary);
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #777;
-    border-radius: 0;
-    margin: 0
 }
 
 .navbar-nav,
@@ -431,3 +430,32 @@ footer {
         background: url(../img/logo480.jpg) no-repeat center top
     }
 }
+@keyframes rote{
+    from{
+    transform:rotate(10deg);
+    }
+    to{
+    transform:rotate(-10deg);
+    }
+    }
+    .drunktext i{
+    display:inline-block;
+    text-align:center;
+    letter-spacing:2px;
+    font-synthesis:none;
+    font-style:normal;
+    font-size: 14px;
+    }
+    .drunktext i:empty{
+    width:1ch;
+    }
+    .drunked i{
+    animation:0.1s ease-in-out rote infinite;
+    }
+    .drunked i:nth-child(odd){
+    animation-direction:alternate-reverse;
+    }
+    .drunked i:nth-child(2n){
+    animation-direction:alternate;
+    }
+    
