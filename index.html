@@ -24,7 +24,6 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto&display=swap" rel="stylesheet"> 
-  <link rel="stylesheet" href="css/gall7.min.css">
 </head>
 <body>
   <nav class="navbar navbar-default navbar-fixed-top">
@@ -340,7 +339,7 @@
       </div>
     </div>
     <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com" rel="noopener noreferrer">Widget</a> is loading comments...</div>
-    <script id="hcb">
+    <script async id="hcb">
       if (!window.hcb_user) {
         hcb_user = {};
       }(function () {
@@ -364,13 +363,14 @@
           Šliažas</a></p>
     </footer>
   </div>
+  <script defer src="js/script.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script defer src="js/script.min.js"></script>
   <script>
   window.IGConfig = {
   delaySeconds: 2,
   showButtons: 0,
+  imageContainer: 'images-container'
   }
   </script>
 </body>
