@@ -41,45 +41,29 @@ html {
 body {
     overflow-x: hidden;
     background: var(--secondary1);
-    font: 16px/1.5em 'Open Sans', Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+    font: 300 16px/1.5em Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
     font-display: optional;
     scroll-behavior: smooth;
     scroll-padding-top: 1em;
 }
 
-h1 {
-    font-size: 1.4375em;
-    line-height: 1.04347826em;
-    margin-bottom: 1.04347826em;
-    margin-top: 2.08695652em
-}
-
-h2 {
-    font-size: 1.25em;
-    line-height: 1.2em;
-    margin-top: 1.2em;
-    margin-bottom: 1.2em
-}
-
+h1,
+h2,
 h3 {
-    font-size: 1.125em;
-    line-height: 1.33333333em;
-    margin-top: 1.33333333em;
-    margin-bottom: 0
+    font-size: 1.5em;
+    line-height: 2em;
+    padding-top: .667em;
+    margin-bottom: .333em
 }
-
-h4 {
+.panel {
+    border-radius: 0 !important;
+}
+h4,
+p {
     font-size: 1em;
     line-height: 1.5em;
-    margin-top: 1.5em;
-    margin-bottom: 0
-}
-
-h5 {
-    font-size: 1em;
-    line-height: 1.5em;
-    margin-top: 1.5em;
-    margin-bottom: 0
+    padding-top: .438em;
+    margin-bottom: 1.06em
 }
 
 blockquote,
@@ -135,6 +119,7 @@ sub {
     scroll-margin-top: 2em;
     padding: 24px;
 }
+
 #about,
 #accordion,
 #photo,
@@ -311,14 +296,16 @@ header {
 
 @keyframes headAnim {
     0% {
-        transform: translate3d(52px,22px,0) scale3d(1.5,1.5,1);
+        transform: translate3d(52px, 22px, 0) scale3d(1.5, 1.5, 1);
     }
+
     50% {
-        transform: translate3d(-52px,52px,0) scale3d(2,2,1);
+        transform: translate3d(-52px, 52px, 0) scale3d(2, 2, 1);
     }
+
     100% {
-        transform: translate3d(0,0,0) scale3d(1,1,1);
-    }    
+        transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    }
 }
 
 .logo,
@@ -347,7 +334,6 @@ header {
 }
 
 .navbar-default {
-    font-family: 'Roboto', sans-serif;
     background: var(--primary);
 }
 
@@ -365,12 +351,14 @@ header {
 }
 
 .panel-heading a {
-    display: block;
+    display: inline-block;
     height: 48px;
     line-height: 48px;
     width: 100%
 }
-
+.panel-title {
+    padding: 0;
+}
 .panel-heading {
     padding: 0 24px
 }
@@ -385,10 +373,6 @@ header {
 .navbar-nav li:hover,
 .panel-default>.panel-heading {
     background-color: var(--primary);
-}
-
-.panel-group .panel+.panel {
-    margin-top: 24px
 }
 
 .thumbnail img {
@@ -430,32 +414,38 @@ footer {
         background: url(../img/logo480.jpg) no-repeat center top
     }
 }
-@keyframes rote{
-    from{
-    transform:rotate(10deg);
+
+@keyframes rote {
+    from {
+        transform: rotate(10deg);
     }
-    to{
-    transform:rotate(-10deg);
+
+    to {
+        transform: rotate(-10deg);
     }
-    }
-    .drunktext i{
-    display:inline-block;
-    text-align:center;
-    letter-spacing:2px;
-    font-synthesis:none;
-    font-style:normal;
+}
+
+.drunktext i {
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 2px;
+    font-synthesis: none;
+    font-style: normal;
     font-size: 14px;
-    }
-    .drunktext i:empty{
-    width:1ch;
-    }
-    .drunked i{
-    animation:0.1s ease-in-out rote infinite;
-    }
-    .drunked i:nth-child(odd){
-    animation-direction:alternate-reverse;
-    }
-    .drunked i:nth-child(2n){
-    animation-direction:alternate;
-    }
-    
+}
+
+.drunktext i:empty {
+    width: 1ch;
+}
+
+.drunked i {
+    animation: 0.1s ease-in-out rote infinite;
+}
+
+.drunked i:nth-child(odd) {
+    animation-direction: alternate-reverse;
+}
+
+.drunked i:nth-child(2n) {
+    animation-direction: alternate;
+}
