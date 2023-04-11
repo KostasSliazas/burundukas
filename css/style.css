@@ -374,7 +374,11 @@ header {
 .panel-default>.panel-heading {
     background-color: var(--primary);
 }
-
+.collapse {
+    display: block !important;
+    overflow: hidden;
+    scroll-margin-top: 96px;
+}
 .thumbnail img {
     width: 100%;
     image-rendering: crisp-edges;
