@@ -22,17 +22,18 @@
   //   }
   // })
 
-  // $('#gotoac').on('click', function (e) {
-  //   e.preventDefault()
-  //   $('.navbar-collapse.in').animate({
-  //     scrollTop: 168
-  //   }, 'slow')
-  // })
+  $('#accordion').on('click', function (e) {
+    e.preventDefault()
+    $(this).removeClass('okty')
+  })
 
   $('#headImage,.arrowd').click(function () {
     $('#headImage').toggleClass('pause')
+    $('#accordion').addClass('okty')
   })
   $(document).ready(function () {
     $('#loader').removeClass('loader')
   })
 })(jQuery)
+
+

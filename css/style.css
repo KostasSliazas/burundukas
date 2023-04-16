@@ -293,8 +293,8 @@ header {
     height: 100px;
     margin: -100px 0 0
 }
-.panel-collapse:target{
-    height: 100% !important;
+.okty .panel-collapse:target{
+    height: auto !important;
 }
 @keyframes headAnim {
     0% {
