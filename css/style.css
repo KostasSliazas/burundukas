@@ -57,6 +57,7 @@ h3 {
 }
 .panel {
     border-radius: 0 !important;
+    position: relative;
 }
 h4,
 p {
@@ -356,13 +357,12 @@ header {
     display: inline-block;
     height: 48px;
     line-height: 48px;
-    width: 100%
+    width: 100%;
+    padding: 0 48px;
 }
-.panel-title {
-    padding: 0;
-}
+.panel-title,
 .panel-heading {
-    padding: 0 24px
+    padding: 0
 }
 
 .dropdown-menu>li>a:focus,
@@ -454,4 +454,20 @@ footer {
 
 .drunked i:nth-child(2n) {
     animation-direction: alternate;
+}
+
+.panel-collapse.collapse::after {
+    content: "::";
+    position: absolute;
+    top: 0;
+    display: block;
+    left: 0;
+    line-height: 3;
+    padding: 0 1em;
+    pointer-events: none;
+    width: 48px;
+text-align: center;
+}
+.panel-collapse.collapse.in::after {
+    content: "^";
 }
