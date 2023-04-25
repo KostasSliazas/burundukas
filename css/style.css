@@ -295,6 +295,18 @@ html[lang="lt"] .en,
 html[lang="en-us"] .lt{
 display: none;
 }
+#langue{
+width: 48px;
+height: 48px;
+text-indent: -9999px;
+overflow: hidden;
+}
+html[lang="en-us"] #langue{
+background: url(../img/Lithuania-Flag.svg) center no-repeat;
+}
+html[lang="lt"] #langue{
+background: url(../img/United-States-Flag.svg) center no-repeat;
+}
 @keyframes headAnim {
     0% {
         transform: translate3d(52px, 22px, 0) scale3d(1.5, 1.5, 1);
@@ -335,6 +347,7 @@ display: none;
 }
 
 .navbar-default {
+    padding: 0 1em;
     background: var(--primary);
 }
 
