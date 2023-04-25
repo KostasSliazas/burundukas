@@ -1,8 +1,8 @@
 (function (w,d) {
 
   d.addEventListener('DOMContentLoaded', function(e){
-    document.documentElement.lang = navigator.language || 'lt'
-    document.title = document.documentElement.lang === 'lt' ? 'Burundukas' : 'Chipmunk'
+    d.documentElement.lang = navigator.language === 'lt' ? 'lt' : 'en-US'
+    d.title = d.documentElement.lang === 'lt' ? 'Burundukas' : 'Chipmunk'
 
     const ext = d.createElement('script')
     ext.setAttribute('defer', 'defer')
@@ -17,8 +17,8 @@
     })
 
     langue.addEventListener('click', function (e) {    
-      document.documentElement.lang = document.documentElement.lang === 'lt' ? 'en-US' : 'lt'
-      document.title = document.documentElement.lang === 'lt' ? 'Burundukas' : 'Chipmunk'
+      d.documentElement.lang = d.documentElement.lang === 'lt' ? 'en-US' : 'lt'
+      d.title = d.documentElement.lang === 'lt' ? 'Burundukas' : 'Chipmunk'
     })
 
     d.querySelector('#loader').classList.remove('loader')
