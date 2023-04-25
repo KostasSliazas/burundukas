@@ -116,7 +116,7 @@ sub {
 }
 
 #photo,
-#video {
+#comments {
     scroll-margin-top: 2em;
     padding: 24px;
 }
@@ -297,7 +297,6 @@ display: none;
 }
 #langue{
 width: 48px;
-height: 48px;
 text-indent: -9999px;
 overflow: hidden;
 }
