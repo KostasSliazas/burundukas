@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 190.01 100" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <path d="m0 0h190v100h-190z" color="#000000" fill="#fff" fill-rule="evenodd"/>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+    <dc:publisher>
+     <cc:Agent rdf:about="http://openclipart.org/">
+      <dc:title>Openclipart</dc:title>
+     </cc:Agent>
+    </dc:publisher>
+   </cc:Work>
+   <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+    <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+    <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+    <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+   </cc:License>
+  </rdf:RDF>
+ </metadata>
+ <g fill-rule="evenodd" stroke-width=".9262">
+  <path d="m0.0099178 0.5v33h190v-33z" color="#000000" fill="#fdb913"/>
+  <path d="m0.0099189 66.5v33h190v-33z" color="#000000" fill="#c1272d"/>
+  <path d="m0.0097656 33.5v33h190v-33z" color="#000000" fill="#006a44"/>
+ </g>
+</svg>
