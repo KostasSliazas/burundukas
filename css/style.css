@@ -149,7 +149,9 @@ h2 {
 h3 {
     text-align: center
 }
-
+#HCB_comment_box h3 {
+    display: none;
+}
 .texts {
     color: #fff;
     text-shadow: -1px -1px 0 #ccc, -2px -2px 2px #eee, 1px 1px 0 #ccc, 2px 2px 2px #aaa;
