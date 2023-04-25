@@ -121,7 +121,7 @@ sub {
     padding: 24px;
 }
 
-#about,
+.about,
 #accordion,
 #photo,
 #video,
@@ -284,18 +284,16 @@ header {
     animation: 7s steps(672) infinite headAnim alternate
 }
 
-#about {
+.about {
     text-align: justify
 }
 
-:target:before {
-    content: "";
-    display: block;
-    height: 100px;
-    margin: -100px 0 0
-}
 .okty .panel-collapse:target{
     height: auto !important;
+}
+html[lang="lt"] .en,
+html[lang="en-us"] .lt{
+display: none;
 }
 @keyframes headAnim {
     0% {
