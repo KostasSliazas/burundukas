@@ -2,6 +2,8 @@
 
   d.addEventListener('DOMContentLoaded', function(e){
     document.documentElement.lang = navigator.language || 'lt'
+    document.title = document.documentElement.lang === 'lt' ? 'Burundukas' : 'Chipmunk'
+
     const ext = d.createElement('script')
     ext.setAttribute('defer', 'defer')
     ext.setAttribute('src', './js/gall7.min.js')
@@ -16,6 +18,7 @@
 
     langue.addEventListener('click', function (e) {    
       document.documentElement.lang = document.documentElement.lang === 'lt' ? 'en-US' : 'lt'
+      document.title = document.documentElement.lang === 'lt' ? 'Burundukas' : 'Chipmunk'
     })
 
     d.querySelector('#loader').classList.remove('loader')
