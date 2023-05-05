@@ -301,10 +301,10 @@ text-indent: -9999px;
 overflow: hidden;
 }
 html[lang="en-us"] #langue{
-background: url(../img/Lithuania-Flag.svg) center no-repeat content-box;
+background: url(../img/Lithuania-Flag.svg) 0 center no-repeat content-box;
 }
 html[lang="lt"] #langue{
-background: url(../img/United-States-Flag.svg) center no-repeat content-box;
+background: url(../img/United-States-Flag.svg) 0 center no-repeat content-box;
 }
 @keyframes headAnim {
     0% {
