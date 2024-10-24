@@ -423,14 +423,14 @@ footer {
 
 @media only screen and (min-width:481px) {
     #headImage {
-        background: url(../img/logo.jpg) no-repeat center/cover;
+        background: url(../img/logo.webp) no-repeat center/cover;
         image-rendering: optimizespeed;
     }
 }
 
 @media only screen and (max-width:480px) {
     #headImage {
-        background: url(../img/logo480.jpg) no-repeat center top
+        background: url(../img/logo480.webp) no-repeat center top
     }
 }
 
