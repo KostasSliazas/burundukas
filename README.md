@@ -2,8 +2,6 @@
 
 Welcome to **Burundukas** — a fun and informative web page dedicated to chipmunks!
 
-> "Burundukas" means **chipmunk** in Lithuanian.
-
 This lightweight project showcases a clean, interactive web page all about chipmunks — their behavior, habitat, and cuteness.
 
 ## Features
