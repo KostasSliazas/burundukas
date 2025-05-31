@@ -25,9 +25,7 @@ This lightweight project showcases a clean, interactive web page all about chipm
 - Responsive and accessible design
 - Cute visuals and smooth animations
 - Easy to modify and expand
-## License
 
-This project is licensed under the [MIT License](LICENSE).
 ## Contributing
 
 To contribute, please fork this repository, create a new branch, and submit a pull request.
@@ -39,3 +37,7 @@ git clone https://github.com/KostasSliazas/burundukas
 ## Contributors
 
 - [@KostasSliazas](https://github.com/KostasSliazas)
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
