@@ -287,9 +287,6 @@ header {
     text-align: justify
 }
 
-.okty .panel-collapse:target{
-    height: auto !important;
-}
 html[lang="lt"] .en,
 html[lang="en-us"] .lt{
 display: none;
