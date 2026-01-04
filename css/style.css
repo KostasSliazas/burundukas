@@ -6,7 +6,13 @@
     --color1: var(--secondary);
     --color2: var(--primary1);
 }
-
+@font-face {
+    font-family: kitten-corner;
+    src: url('../font/kitten-corner.woff2') format('woff2'), url('../font/kitten-corner.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
 html {
     overflow-y: auto;
     scroll-padding-top: 3em;
@@ -43,7 +49,7 @@ html {
 body {
     overflow-x: hidden;
     background: var(--secondary1);
-    font: 300 16px/1.5em Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+    font: 300 16px/1.5em kitten-corner, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
     font-display: optional;
     scroll-behavior: smooth;
 }
@@ -281,10 +287,6 @@ header {
     height: 100%;
     transform: translate3d(0, 0, 0);
     animation: 7s steps(672) infinite headAnim alternate
-}
-
-.about {
-    text-align: justify
 }
 
 html[lang="lt"] .en,
